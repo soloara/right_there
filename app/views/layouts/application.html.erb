@@ -35,20 +35,33 @@
     <%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
 
     <%= javascript_include_tag "application" %>
+    
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB1O0enlUE-aWyI5ypOg5lsFtvJjY1YOHs&sensor=true">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(34.4230, 108.2115),
+          zoom: 5,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+          mapOptions);
+      }
+    </script>
+
   </head>
-  <body>
+  <body  onload="initialize()">
 
     <%= render partial: 'layouts/header' %>
 
-    <div class="container">
-        <div class="row">
-          <div class="span9">
-            <%= bootstrap_flash %>
-            <%= yield %>
-          </div>
-        </div><!--/row-->
-        <%= render partial: 'layouts/footer' %>
-    </div> <!-- /container -->
+    <div class="row-fluid">
+      <div class="span12">
+        <%= bootstrap_flash %>
+        <%= yield %>
+      </div>
+      <%= render partial: 'layouts/footer' %>
+    </div>
 
 
   </body>

@@ -24,8 +24,6 @@ gem "twitter-bootstrap-rails"
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
-gem "ember-rails"
-gem "ember-source"
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 # gem 'turbolinks'

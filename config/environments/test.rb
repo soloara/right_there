@@ -30,11 +30,6 @@ RightThere::Application.configure do
   # The :test delivery method accumulates sent emails in the
   # ActionMailer::Base.deliveries array.
   config.action_mailer.delivery_method = :test
-  
-  # You can set a specific variant in your application config in
-  # order for sprockets to locate ember's assets:
-  # config.ember.variant = :development
-  config.ember.variant = :development
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr

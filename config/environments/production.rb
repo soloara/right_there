@@ -74,11 +74,6 @@ RightThere::Application.configure do
 
   # Disable automatic flushing of the log to improve performance.
   # config.autoflush_log = false
-  
-  # You can set a specific variant in your application config in
-  # order for sprockets to locate ember's assets:
-  # config.ember.variant = :development
-  config.ember.variant = :production
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new

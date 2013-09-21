@@ -21,11 +21,6 @@ RightThere::Application.configure do
 
   # Raise an error on page load if there are pending migrations
   config.active_record.migration_error = :page_load
-  
-  # You can set a specific variant in your application config in
-  # order for sprockets to locate ember's assets:
-  # config.ember.variant = :development
-  config.ember.variant = :development
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
