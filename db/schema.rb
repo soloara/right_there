@@ -16,6 +16,8 @@ ActiveRecord::Schema.define(version: 20130920170046) do
   create_table "places", primary_key: "uid", force: true do |t|
     t.string "name",  limit: 30
     t.string "level", limit: 10
+    t.float  "lat"
+    t.float  "lng"
   end
 
   create_table "tickets", force: true do |t|

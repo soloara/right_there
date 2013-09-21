@@ -15,4 +15,15 @@
 //= require twitter/bootstrap
 //= require_self
 
+//= require underscore
+//= require backbone
+//= require backbone.marionette
+//= require backbone-relational
+//= require right_there
+//= require_tree ../templates
+//= require_tree ./models
+//= require_tree ./collections
+//= require_tree ./views
+//= require_tree ./routers
+//= require_tree ./pages
 //= require_tree .

@@ -38,22 +38,10 @@
     
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB1O0enlUE-aWyI5ypOg5lsFtvJjY1YOHs&sensor=true">
     </script>
-    <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: new google.maps.LatLng(34.4230, 108.2115),
-          zoom: 5,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map_canvas"),
-          mapOptions);
-      }
-    </script>
-
   </head>
-  <body  onload="initialize()">
+  <body>
 
-    <%= render partial: 'layouts/header' %>
+    <div id='header'></div>
 
     <div class="row-fluid">
       <div class="span12">

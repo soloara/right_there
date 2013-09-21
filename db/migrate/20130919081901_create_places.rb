@@ -4,6 +4,7 @@ class CreatePlaces < ActiveRecord::Migration
       t.string :uid, limit: 6, null: false
       t.string :name, limit: 30
       t.string :level, limit: 10
+      t.float  :lat, :lng
     end
     execute "ALTER TABLE places ADD PRIMARY KEY (uid);"
   end

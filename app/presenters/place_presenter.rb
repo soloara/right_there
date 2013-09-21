@@ -10,12 +10,8 @@ class PlacePresenter
       tickets_count: @data.tickets_count,
       name: @data.name,
       level: @data.level,
-      tickets: @data.tickets.map do |ticket|
-        {
-          email: ticket.email,
-          place_id: ticket.place_id
-        }
-      end
+      lat: @data.lat,
+      lng: @data.lng
     }
   end
   
